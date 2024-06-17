@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="80dp"
+    tools:context=".MainActivity">
+
+
+    <Button
+        android:id="@+id/send_notification"
+        android:layout_width="match_parent"
+        android:layout_marginTop="2dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="12dp"
+        android:paddingStart="2dp"
+        android:paddingEnd="2dp"
+        android:textAllCaps="false"
+        android:text="@string/send_notification_btn"
+        android:textColor="@color/white"
+        tools:ignore="ButtonStyle" />
+
+    <Button
+        android:id="@+id/btn_get_token"
+        android:layout_width="match_parent"
+        android:layout_marginTop="2dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="12dp"
+        android:paddingStart="2dp"
+        android:layout_below="@+id/send_notification"
+        android:paddingEnd="2dp"
+        android:textAllCaps="false"
+        android:text="@string/get_token"
+        android:textColor="@color/white"
+        tools:ignore="ButtonStyle" />
+
+    <include
+        android:id="@+id/layout_log"
+        layout="@layout/log_layout"
+        android:layout_below="@+id/btn_get_token"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</RelativeLayout>

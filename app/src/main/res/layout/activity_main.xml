@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="80dp"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btn_go_to_notification_page"
+        android:layout_width="match_parent"
+        android:layout_marginTop="2dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="12dp"
+        android:paddingStart="2dp"
+        android:paddingEnd="2dp"
+        android:textAllCaps="false"
+        android:text="@string/notification"
+        android:textColor="@color/white"
+        tools:ignore="ButtonStyle" />
+
+    <Button
+        android:id="@+id/btn_go_to_dynamic_link_page"
+        android:layout_width="match_parent"
+        android:layout_marginTop="2dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="12dp"
+        android:paddingStart="2dp"
+        android:layout_below="@+id/btn_go_to_notification_page"
+        android:paddingEnd="2dp"
+        android:textAllCaps="false"
+        android:text="@string/dynamic_link"
+        android:textColor="@color/white"
+        tools:ignore="ButtonStyle" />
+
+    <include
+        android:id="@+id/layout_log"
+        layout="@layout/log_layout"
+        android:layout_below="@+id/btn_go_to_dynamic_link_page"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</RelativeLayout>

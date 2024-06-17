@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">PocHms</string>
+    <string name="send_notification">send notification</string>
+    <string name="notification">notification</string>
+    <string name="dynamic_link">dynamic link</string>
+    <string name="send_notification_btn">Send Notification</string>
+    <string name="get_token">get Token</string>
+</resources>
